@@ -3,5 +3,8 @@ name = "project2"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = "==3.13.5"
+dependencies = [
+    "httpx>=0.28.0",
+    "orjson>=3.10.18"
+]

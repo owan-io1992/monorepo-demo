@@ -3,8 +3,28 @@ name = "monorepo-demo"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = "==3.13.5"
 dependencies = []
+
+[dependency-groups]
+project1 = [
+  "project1",
+  "library1",
+  "library2",
+]
+project2 = [
+  "project2",
+  "library1",
+]
+
+[tool.uv.sources]
+project1 = { workspace = true }
+project2 = { workspace = true }
+library1 = { workspace = true }
+library2 = { workspace = true }
+
+[tool.uv]
+default-groups = "all"
 
 [tool.uv.workspace]
 members = ["projects/*", "librarys/*"]
