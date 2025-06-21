@@ -3,3 +3,6 @@ dependsOn:
   - "library1"
   - "library2"
 
+tasks:
+  build:
+    args: 'extra override'
