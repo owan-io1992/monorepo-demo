@@ -1,0 +1,5 @@
+
+dependsOn:
+  - "library1"
+  - "library2"
+
