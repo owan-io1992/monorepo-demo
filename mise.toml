@@ -1,3 +1,4 @@
 [tools]
+moonrepo = "1.37.3"
 python = "3.13.5"
 uv = "0.7.13"
